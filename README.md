@@ -8,6 +8,15 @@ To run the program simply pull this project to a folder. From there you just typ
 go run main.go 1 2 3
 > Scalene triangle
 ```
+```
+go run main.go 1 1 2
+> Isosceles triangle
+```
+
+```
+go run main.go 2 2 2 
+> Equilateral triangle
+```
 
 It is important to use a space between each integer. Only type numbers. The program will tell you if you have used a wrong input.
 
