@@ -1,5 +1,16 @@
 # getting_started_TEST
 
+## Running the program
+First of all you should have Go installed on your computer. If you have not installed Go a guide can be found [here.](https://golang.org/doc/install)
+To run the program simply pull this project to a folder. From there you just type a following command in your terminal at the root of the project: 
+
+```
+go run main.go 1 2 3
+> Scalene triangle
+```
+
+It is important to use a space between each integer. Only type numbers. The program will tell you if you have used a wrong input.
+
 ## Test cases
 
 I have left out *Created By, Date of creation, Executed By and Date of execution* as I have created and executed all test on the same day; February 10, 2018.
