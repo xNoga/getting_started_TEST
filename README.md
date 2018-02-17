@@ -17,7 +17,33 @@ Linket oven over indeholder et hav af standarder som også bruges i Go. F.eks. e
 
 Der findes et hav af kodestandarder, der skal overholdes, så jeg nævner ikke dem alle her. Men de kan ses i linket øverst i afsnittet.
 
+### Calculate central metrics in your triangle program
 
+Som nævnt kan jeg ikke helt gøre dette i Go. Der findes dog en hjemmeside kaldet [goreportcard.com](https://goreportcard.com) som kan måle ens kode på nogle andre parametre og give en general status for ens program. For min kode kan resultatet ses [her.](https://goreportcard.com/report/github.com/xNoga/getting_started_TEST)
+
+### Find out what CC variation your metrics tool uses
+
+Jeg har brugt [gocyclo](https://github.com/fzipp/gocyclo) til at måle CC med i min Go-applikation. Gocyclo er et lille program der måler CC ud fra følgende parametre:
+```
+1 is the base complexity of a function
++1 for each 'if', 'for', 'case', '&&' or '||'
+```
+
+Når jeg kører gocyclo får jeg følgende resultat: 
+
+![](https://github.com/xNoga/getting_started_TEST/blob/master/img/Screen%20Shot%202018-02-17%20at%2012.50.46.png)
+
+Hvis vi tager exempel i den første linje:
+6 indikerer mængden af compleksitet. "main" refererer til hvilken package der er tale om. "findTriangleName" er navnet på den givne funktion, og "main.go:37:1" indikerer hvor henne i filen der er tale om.
+Som det kan ses på resultatet er vores program ikke særlig komplekts. 
+
+### Possibly refactor your code based on static testing results.
+Jeg har ikke refactored noget som følge af CC results, men jeg har refaktoreret koden så den understøtter "Unit" (Go håndterer tests lidt anderldes, men konceptet er det samme) tests.
+
+### Write test cases in xUnit tool.
+Se koden.
+
+### Peer Review Checklist
 
 
 ## Running the program
