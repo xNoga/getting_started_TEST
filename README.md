@@ -58,6 +58,14 @@ Det er generelt bare vigtigt at man som team bliver enige om, hvordan koden skal
 Det er yderligere også vigtigt at gøre brug af comments i sin kode, så alle kan læse sig frem til, hvad et givent stykke kode gør. Så længe man gør brug af comments kan man også i højere grad afvige fra en aftalt form, da resten af team'et forhåbentlig stadig kan læse sig frem til, hvad koden gør. 
 
 ## Highlights from lecture by Gitte Ottosen, Gapgemini-Sogeti
+Oplægget fra Gitte Ottosen var rigtig brugbart og interessant. Vi har på uddanelse hørt meget om test, men jeg har personligt aldrig fået det relateret over til den virkelige verden. I skolen laver vi altid egne små projekter, og man har derfor mindre fokus på tests, da det allgievel kun er ens egne øjne der skal se på koden. 
+
+De primære pointer jeg vil tage med fra Gitte's præsentation er hendes pointer omkring omkostninger og hvor meget tid og hvor mange penge man kan spare, hvis man tester undervejs. Jeg kan i højere grad forstå hvorfor tests er så vigtige i en virksomhed, hvor fejl kan koste uhørt mange penge. Der kan derfor ikke være plads til fejl - og hvis de opstår kan det blive rigtig dyrt. Hvis der opstår for mange fejl for ofte, så har man ikke længere en virksomhed. 
+
+Det åbnede også mine øjne op for, hvor stor del af processen man tester i den virkelige verden. Gitte kom med eksempler på virkelig mange slags tests, der alle har et specifikt formål. Det er altså ikke kun functional og non-functional tests engang imellem, men tests under hele processen og hele tiden. Det virkede meget omstændig og jeg forestiller mig, at der kommer til at gå virkelig meget tid med testing, men det har et formål og en klar fordel mht vedligeholdelse af kode, og mængden af fejl. 
+
+Jeg spurgte også Gitte efter præsentationen, om man altid har tid til tests i verden, hvor time to market er vigtigere end nogensinde før. Hun forklarede mig, at man ofte er nødt til at droppe tests, fordi man vurderer at det er vigtigere at få en funktionalitet på markedet. Det synes jeg også var en vigtig pointe.
+
 
 # Running the program
 First of all you should have Go installed on your computer. If you have not installed Go a guide can be found [here.](https://golang.org/doc/install)
