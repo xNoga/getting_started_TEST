@@ -34,16 +34,31 @@ func checkInput(input []string) {
 	}
 }
 
-func findTriangleName() {
+func findTriangleName() (res string) {
 	var a = in[0]
 	var b = in[1]
 	var c = in[2]
 
+	checkValidTriangle(a, b, c)
+
 	if a == b && b == c {
 		fmt.Println("Equilateral triangle")
+		return "Equilateral triangle"
 	} else if a == b || a == c || b == c {
 		fmt.Println("Isosceles triangle")
+		return "Isosceles triangle"
 	} else {
 		fmt.Println("Scalene triangle")
+		return "Scalene triangle"
+	}
+
+	return ""
+}
+
+func checkValidTriangle(a int64, b int64, c int64) (valid bool) {
+	if a+b > c && a+c > b && b+c > a {
+		return true
+	} else {
+		return false
 	}
 }
