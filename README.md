@@ -51,6 +51,8 @@ Checklisten kommer med generelle råd til hvordan opnår en mere effektiv Code R
 De skriver også det er vigtigt at defects er fixed og ikke bare fundet. Man kan som programmør nogle gange godt støde på situationer, hvor man ved at et givent flow i applikationen giver en fejl, men man gør ikke noget ved det lige med det samme, fordi man måske føler der er andre vigtigere ting at tage sig til. Jeg synes det er en god pointe, at man husker at rette disse defects med det samme. 
 
 ## Review code that mysteriously fails its unit tests
+Det burde umiddelbart ikke være muligt for koden at køre, fordi man i dette tilfælde har valgt at gøre ArrayList'en *people* static. Dvs, når vi prøver at køre *underTest.addPerson(p)* skulle compileren gerne fortælle os, at non-static metoden *addPerson(Person)* ikke kan blive refereret fra en static kontekst.
+Hvis vi skulle fixe dette kunne vi f.eks. sætte static ind i addPerson-metoden. Således at den hed *public static void addPerson(Person person)* i stedet. 
 
 ## Coding Standard Document
 Jeg har personligt ikke en række standarder, som jeg mener er de rigtige/forkerte. Jeg foretækker i stedet at man som team bare blive enige om, HVILKE standarder man bruger, således at hele team'et bruger de samme standarder, best practices og code conventions. Det er i hvert fald vigtigt at blive enige om naming conventions - om man f.eks. bruger camelcase eller lowercase når man navngiver. Der er selvfølgelig også bitte små ting som hvordan man bruger tabs og spaces.
