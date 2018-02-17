@@ -47,14 +47,17 @@ Jeg havde desværre en del problemer med at sætte Unit-tests op i Go, da det ga
 ## Peer Review Checklist
 
 Checklisten kommer med generelle råd til hvordan opnår en mere effektiv Code Review. Code Review er generelt ikke noget vi har gjort os så meget i på uddannelse, men kilden giver rigtig fine perspektiver på, hvorfor det er vigtigt at bruge en række praksisser mht Code Review. Jeg synes specielt punkterne, der omhandler at man ikke skal kigge på code review i mere end 60-90 minutter. I forlængelse heraf skriver de også man ikke skal kigge på mere end 200 linjer kode i "one sitting" og at man gerne skal tage 20 minutters pause mellem hver review settings. Jeg synes det er gode råd, da man nemt kan komme til at læse forkert/ikke koncentere sig ordentligt, når man har kigget på andres kode i længere tid. Jeg har i hvert fald selv flere gange mistet koncentrationen, når jeg har skulle sætte mig ind i andres kode, og gerne prøve at review'e det. 
+
 De skriver også det er vigtigt at defects er fixed og ikke bare fundet. Man kan som programmør nogle gange godt støde på situationer, hvor man ved at et givent flow i applikationen giver en fejl, men man gør ikke noget ved det lige med det samme, fordi man måske føler der er andre vigtigere ting at tage sig til. Jeg synes det er en god pointe, at man husker at rette disse defects med det samme. 
 
 ## Review code that mysteriously fails its unit tests
 
 ## Coding Standard Document
 Jeg har personligt ikke en række standarder, som jeg mener er de rigtige/forkerte. Jeg foretækker i stedet at man som team bare blive enige om, HVILKE standarder man bruger, således at hele team'et bruger de samme standarder, best practices og code conventions. Det er i hvert fald vigtigt at blive enige om naming conventions - om man f.eks. bruger camelcase eller lowercase når man navngiver. Der er selvfølgelig også bitte små ting som hvordan man bruger tabs og spaces.
+
 Det kan også være en fordel efter min mening, at man f.eks. også bliver enige om, hvordan opbygningen af routes i et REST-API ser ud, så alle ved, uden at skulle spørge, hvad et givent kald gør. 
 Det er generelt bare vigtigt at man som team bliver enige om, hvordan koden skal se ud, og hvordan evt. et almindelig funktionskald skal se ud.
+
 Det er yderligere også vigtigt at gøre brug af comments i sin kode, så alle kan læse sig frem til, hvad et givent stykke kode gør. Så længe man gør brug af comments kan man også i højere grad afvige fra en aftalt form, da resten af team'et forhåbentlig stadig kan læse sig frem til, hvad koden gør. 
 
 ## Highlights from lecture by Gitte Ottosen, Gapgemini-Sogeti
