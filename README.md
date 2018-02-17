@@ -41,7 +41,8 @@ Som det kan ses på resultatet er vores program ikke særlig komplekts.
 Jeg har ikke refactored noget som følge af CC results, men jeg har refaktoreret koden så den understøtter "Unit" (Go håndterer tests lidt anderldes, men konceptet er det samme) tests.
 
 ### Write test cases in xUnit tool.
-Se koden.
+Se koden. Brug kommandoen "go test" for at køre tests (fra en terminal der befinder sig på roden af projektet selvfølgelig).
+Jeg havde desværre en del problemer med at sætte Unit-tests op i Go, da det gav mig problemer med inputparametre af en eller anden årsag. Der skulle derfor gerne have været et par tests mere, men grundet tidspres må jeg nøjes med de tre tests der er. Den første test tester om  input gør som forventet, og test nr. 2 tester om en trekant er valid og om trekantens navn derefter er som vi forventer. 
 
 ## Peer Review Checklist
 
