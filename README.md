@@ -43,10 +43,10 @@ Jeg har ikke refactored noget som følge af CC results, men jeg har refaktoreret
 ### Write test cases in xUnit tool.
 Se koden.
 
-### Peer Review Checklist
+## Peer Review Checklist
 
 
-## Running the program
+# Running the program
 First of all you should have Go installed on your computer. If you have not installed Go a guide can be found [here.](https://golang.org/doc/install)
 To run the program simply pull this project to a folder. From there you just type a following command in your terminal at the root of the project: 
 
