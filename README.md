@@ -63,7 +63,7 @@ Det er generelt bare vigtigt at man som team bliver enige om, hvordan koden skal
 Det er yderligere også vigtigt at gøre brug af comments i sin kode, så alle kan læse sig frem til, hvad et givent stykke kode gør. Så længe man gør brug af comments kan man også i højere grad afvige fra en aftalt form, da resten af team'et forhåbentlig stadig kan læse sig frem til, hvad koden gør. 
 
 ## Highlights from lecture by Gitte Ottosen, Gapgemini-Sogeti
-Oplægget fra Gitte Ottosen var rigtig brugbart og interessant. Vi har på uddanelse hørt meget om test, men jeg har personligt aldrig fået det relateret over til den virkelige verden. I skolen laver vi altid egne små projekter, og man har derfor mindre fokus på tests, da det allgievel kun er ens egne øjne der skal se på koden. 
+Oplægget fra Gitte Ottosen var rigtig brugbart og interessant. Vi har på uddanelse hørt meget om test, men jeg har personligt aldrig holdt det op mod den virkelige verden. I skolen laver vi altid egne små projekter, og man har derfor mindre fokus på tests, da det alligevel kun er ens egne øjne der skal se på koden. 
 
 De primære pointer jeg vil tage med fra Gitte's præsentation er hendes pointer omkring omkostninger og hvor meget tid og hvor mange penge man kan spare, hvis man tester undervejs. Jeg kan i højere grad forstå hvorfor tests er så vigtige i en virksomhed, hvor fejl kan koste uhørt mange penge. Der kan derfor ikke være plads til fejl - og hvis de opstår kan det blive rigtig dyrt. Hvis der opstår for mange fejl for ofte, så har man ikke længere en virksomhed. 
 
