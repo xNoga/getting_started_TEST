@@ -53,7 +53,7 @@ De skriver også det er vigtigt at defects er fixed og ikke bare fundet. Man kan
 
 ## Coding Standard Document
 Jeg har personligt ikke en række standarder, som jeg mener er de rigtige/forkerte. Jeg foretækker i stedet at man som team bare blive enige om, HVILKE standarder man bruger, således at hele team'et bruger de samme standarder, best practices og code conventions. Det er i hvert fald vigtigt at blive enige om naming conventions - om man f.eks. bruger camelcase eller lowercase når man navngiver. Der er selvfølgelig også bitte små ting som hvordan man bruger tabs og spaces.
-Det kan også være en fordel efter min mening, at man f.eks. også bliver enige om, hvordan man bliver enige om opbygningen af routes i et REST-API, så alle ved, uden at skulle spørge, hvad et givent kald gør. 
+Det kan også være en fordel efter min mening, at man f.eks. også bliver enige om, hvordan opbygningen af routes i et REST-API ser ud, så alle ved, uden at skulle spørge, hvad et givent kald gør. 
 Det er generelt bare vigtigt at man som team bliver enige om, hvordan koden skal se ud, og hvordan evt. et almindelig funktionskald skal se ud.
 Det er yderligere også vigtigt at gøre brug af comments i sin kode, så alle kan læse sig frem til, hvad et givent stykke kode gør. Så længe man gør brug af comments kan man også i højere grad afvige fra en aftalt form, da resten af team'et forhåbentlig stadig kan læse sig frem til, hvad koden gør. 
 
