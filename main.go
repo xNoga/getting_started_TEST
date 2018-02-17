@@ -15,11 +15,11 @@ func main() {
 
 func checkInput(input []string) {
 
-	if len(input) > 4 {
+	if len(input) == 3 {
+		fmt.Println("Right amount of input")
+	} else if len(input) > 4 {
 		panic("Too much input. You can only use 3 integers as input!")
-	}
-
-	if len(input) < 4 {
+	} else if len(input) < 4 {
 		panic("Not enough input. You need to input 3 integers as input!")
 	}
 
