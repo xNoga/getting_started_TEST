@@ -7,19 +7,21 @@ import (
 )
 
 var in [3]int64
+var a, b, c int64
 
 func main() {
-	checkInput(os.Args)
-	findTriangleName()
+	checkInput(os.Args, false)
+	findTriangleName(a, b, c)
 }
 
-func checkInput(input []string) {
-
-	if len(input) == 3 {
-		fmt.Println("Right amount of input")
-	} else if len(input) > 4 {
+func checkInput(input []string, testing bool) {
+	if !testing {
+		input = input[1:]
+	}
+	if len(input) > 3 {
 		panic("Too much input. You can only use 3 integers as input!")
-	} else if len(input) < 4 {
+	} else if len(input) < 3 {
+		fmt.Println("Should panic!")
 		panic("Not enough input. You need to input 3 integers as input!")
 	}
 
@@ -32,13 +34,12 @@ func checkInput(input []string) {
 			in[i] = val
 		}
 	}
+	a = in[0]
+	b = in[1]
+	c = in[2]
 }
 
-func findTriangleName() (res string) {
-	var a = in[0]
-	var b = in[1]
-	var c = in[2]
-
+func findTriangleName(a, b, c int64) (res string) {
 	checkValidTriangle(a, b, c)
 
 	if a == b && b == c {
@@ -51,14 +52,11 @@ func findTriangleName() (res string) {
 		fmt.Println("Scalene triangle")
 		return "Scalene triangle"
 	}
-
-	return ""
 }
 
 func checkValidTriangle(a int64, b int64, c int64) (valid bool) {
 	if a+b > c && a+c > b && b+c > a {
 		return true
-	} else {
-		return false
 	}
+	return false
 }
